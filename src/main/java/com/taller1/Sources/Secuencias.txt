@@ -1,0 +1,4 @@
+int varNumber1 = Console.integerInput("Ingrese el primer numero de tipo entero"),
+    varNumber2 = Console.integerInput("Ingrese el segundo numero de tipo entero");
+
+Console.printMessage("La suma de los dos numeros es: "+(varNumber1 + varNumber2));

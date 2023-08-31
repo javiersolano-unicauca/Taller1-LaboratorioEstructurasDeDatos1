@@ -1,0 +1,11 @@
+int varNumber1 = Console.integerInput("Ingrese el primer numero de tipo entero"),
+    varNumber2 = Console.integerInput("Ingrese el segundo numero de tipo entero");
+
+if(varNumber1 > varNumber2)
+    Console.printMessage("El primer numero es mayor que el segundo.");
+
+else if(varNumber1 == varNumber2)
+    Console.printMessage("Los dos numeros son iguales.");
+
+else
+    Console.printMessage("El primer numero es menor que el segundo.");

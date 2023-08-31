@@ -1,0 +1,12 @@
+int varIntervalStart = Console.integerInput("Ingrse el numero de tipo entero que inicia el intervalo"),
+    varIntervalFinish = Console.integerInput("Ingrese el numero de tipo entero que finaliza el intervalo"),
+    varNumber = Console.integerInput("Ingrese un numero de tipo entero");
+
+if((varNumber > varIntervalStart) && (varNumber < varIntervalFinish))
+    Console.printMessage("El numero se encuentra en el intervalo de ("+varIntervalStart+" - "+varIntervalFinish+")");
+
+else if((varNumber == varIntervalStart) || (varNumber == varIntervalFinish))
+    Console.printMessage("El numero es un extremo del intervalo de ("+varIntervalStart+" - "+varIntervalFinish+")");
+
+else
+    Console.printMessage("El numero no se encuentra en el intervalo de ("+varIntervalStart+" - "+varIntervalFinish+")");
