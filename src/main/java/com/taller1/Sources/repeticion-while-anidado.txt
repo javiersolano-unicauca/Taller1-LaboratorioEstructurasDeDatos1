@@ -1,0 +1,27 @@
+int varSize = Console.integerInput("Ingrese la cantidad de numeros de la sucecion Fibonacci que desea"),
+   varAmountMultiples = Console.integerInput("Ingrese la cantidad de multiplos por tabla"),
+   varNumberBefore = 1,
+   varNumberAfter = 0,
+   varAux;
+
+Console.printMessage("\tSUCESION OBTENIDA:");
+
+int i = 1, j;
+
+while(i <= varSize)
+{
+   Console.printMessage("\tTABLA DEL NUMERO ("+varNumberAfter+"):");            
+   j = 1;
+
+   while(j <= varAmountMultiples)
+   {
+       Console.println(varNumberAfter+" * "+j+" = "+(varNumberAfter*j));
+       j++;
+   }
+
+   varAux = varNumberAfter;
+   varNumberAfter += varNumberBefore;
+   varNumberBefore = varAux;
+
+   i++;
+}

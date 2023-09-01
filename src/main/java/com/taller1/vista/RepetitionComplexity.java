@@ -92,8 +92,6 @@ public class RepetitionComplexity extends Complexity {
         
         printExecTime();
         algoritmPrint();
-    }
-   
-     
+    }     
     
 }
