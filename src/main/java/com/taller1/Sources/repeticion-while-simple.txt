@@ -1,0 +1,18 @@
+int varSize = Console.integerInput("Ingrese la cantidad de numeros de la sucesion Fibonacci que desea"),
+    varNumberBefore = 1,
+    varNumberAfter = 0,
+    varAux;
+
+Console.printMessage("\tSUCESION OBTENIDA:");
+
+int i = 1;
+
+while(i <= varSize)
+{
+    Console.println(""+varNumberAfter);
+    varAux = varNumberAfter;
+    varNumberAfter += varNumberBefore;
+    varNumberBefore = varAux; 
+
+    i++;
+}

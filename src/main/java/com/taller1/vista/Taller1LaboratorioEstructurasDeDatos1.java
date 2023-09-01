@@ -4,6 +4,7 @@
 
 package com.taller1.vista;
 
+import com.taller1.Libraries.Consoles.Console;
 import com.taller1.Libraries.Exceptions.MathException;
 import com.taller1.Libraries.Files.File;
 
@@ -17,26 +18,45 @@ public class Taller1LaboratorioEstructurasDeDatos1 {
         
         File objFile = new File("D:\\Documentos\\NetBeansProjects\\Taller1-LaboratorioEstructurasDeDatos1\\src\\main\\java\\com\\taller1\\Sources");
         
-        String[] arrContent = new String[12];
+        String[] arrContent = new String[18];
                 
-        arrContent[0] = "int varIntervalStart = Console.integerInput(\"Ingrse el numero de tipo entero que inicia el intervalo\"),";
-        arrContent[1] = "    varIntervalFinish = Console.integerInput(\"Ingrese el numero de tipo entero que finaliza el intervalo\"),";
-        arrContent[2] = "    varNumber = Console.integerInput(\"Ingrese un numero de tipo entero\");";
-        arrContent[3] = "";
-        arrContent[4] = "if((varNumber > varIntervalStart) && (varNumber < varIntervalFinish))";
-        arrContent[5] = "    Console.printMessage(\"El numero se encuentra en el intervalo de (\"+varIntervalStart+\" - \"+varIntervalFinish+\")\");"; 
-        arrContent[6] = "";    
-        arrContent[7] = "else if((varNumber == varIntervalStart) || (varNumber == varIntervalFinish))";
-        arrContent[8] = "    Console.printMessage(\"El numero es un extremo del intervalo de (\"+varIntervalStart+\" - \"+varIntervalFinish+\")\");";
-        arrContent[9] = "";
-        arrContent[10] = "else";
-        arrContent[11] = "    Console.printMessage(\"El numero no se encuentra en el intervalo de (\"+varIntervalStart+\" - \"+varIntervalFinish+\")\");";
+//        arrContent[0] = "";
+arrContent[0] = "int varSize = Console.integerInput(\"Ingrese la cantidad de numeros de la sucesion Fibonacci que desea\"),";
+arrContent[1] = "    varNumberBefore = 1,";
+arrContent[2] = "    varNumberAfter = 0,";
+arrContent[3] = "    varAux;";
+arrContent[4] = "";
+arrContent[5] = "Console.printMessage(\"\tSUCESION OBTENIDA:\");";
+arrContent[6] = "";
+arrContent[7] = "int i = 1;";
+arrContent[8] = "";
+arrContent[9] = "do{";
+arrContent[10] = "    Console.println(\"\"+varNumberAfter);";
+arrContent[11] = "    varAux = varNumberAfter;";
+arrContent[12] = "    varNumberAfter += varNumberBefore;";
+arrContent[13] = "    varNumberBefore = varAux; ";
+arrContent[14] = "";
+arrContent[15] = "    i++;";
+arrContent[16] = "";
+arrContent[17] = "}while(i <= varSize)";
 
-        objFile.exportTxt("condicion-compuesta-anidada", arrContent);
+        objFile.exportTxtWithLn("repeticion-do-while-simple", arrContent);
+//
+//        NestedConditionComplexity objNestedConditionComplexity = new NestedConditionComplexity();
+//        objNestedConditionComplexity.componundCondition();
 
-        NestedConditionComplexity objNestedConditionComplexity = new NestedConditionComplexity();
-        objNestedConditionComplexity.componundCondition();
-          
+        RepetitionComplexity objRepetitionComplexity = new RepetitionComplexity();
+        objRepetitionComplexity.repetitionDoWhileSimple();
+
+//          SequenceComplexity objSequenceComplexity = new SequenceComplexity();
+//          objSequenceComplexity.addtwoNumbers();
+
+//        String[] txt = objFile.importTxt("repeticion-for-simple");
+//          
+//        for(String row: txt)
+//            Console.print(row);
+
+
     }
     
     
