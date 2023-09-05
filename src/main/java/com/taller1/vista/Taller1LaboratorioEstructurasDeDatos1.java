@@ -16,7 +16,7 @@ public class Taller1LaboratorioEstructurasDeDatos1 {
 
     public static void main(String[] args) throws MathException {
         
-        File objFile = new File("D:\\Documentos\\NetBeansProjects\\Taller1-LaboratorioEstructurasDeDatos1\\src\\main\\java\\com\\taller1\\Sources");
+        File objFile = new File("\\src\\main\\java\\com\\taller1\\Sources");
         
         String[] arrContent = new String[1];
                 

@@ -9,7 +9,7 @@ import com.taller1.Libraries.Files.File;
 public class Complexity {
     
     private File atrFile;
-    private final String ATR_PATH_FILE = "D:\\Documentos\\NetBeansProjects\\Taller1-LaboratorioEstructurasDeDatos1\\src\\main\\java\\com\\taller1\\Sources";
+    private final String ATR_PATH_FILE = "\\src\\main\\java\\com\\taller1\\Sources";
     private String atrFileName;
     private long atrStartTime;
     
